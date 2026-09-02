@@ -1,0 +1,12 @@
+const prompt = require('prompt-sync')();
+let nb1 = parseFloat(prompt("entrer le premier nombre :"));
+let nb2 = parseFloat(prompt("entrer la deusiéme nombre :"));
+let somme = nb1 + nb2;
+let difference = nb1 - nb2 ;
+let produit = nb1 * nb2;
+let quotien = nb1 / nb2;
+console.log(`resultat pour ${nb1} et${nb2} :`);
+console.log(`somme : ${somme}`);
+console.log(`difference : ${difference}`);
+console.log(`produit : ${produit}`);
+console.log(`quotien : ${quotien}`);
