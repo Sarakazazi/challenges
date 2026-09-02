@@ -1,5 +1,13 @@
-const prompt = require('prompt-sync')();
-const secondes = Number(prompt('entrer un nombre de secondes: '));
-let heures = parseInt (secondes/3600);
-let minutes = parseInt((heures % 3600) / 60);
-let secondes = (secondes % 3600) %60 ;
+let tsecond = parseFloat(prompt("Entrez le nombre de secondes :"));
+
+let heures = parseInt(tsecond / 3600);
+
+let reste = tsecond % 3600;
+
+let minutes = parseInt(reste / 60);
+
+let secondes = reste % 60;
+
+console.log("Heures :", heures);
+console.log("Minutes :", minutes);
+console.log("Secondes :", secondes);
