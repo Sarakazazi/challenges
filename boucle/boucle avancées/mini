@@ -1,0 +1,33 @@
+const prompt = require('prompt-sync')();
+function affichetablecalcule(){
+    do {
+        console.log("le tableau calcule : ");
+        parseInt(prompt("1-addition"));
+        parseInt(prompt("2-multiplication"));
+        parseInt(prompt("3-division"));
+        parseInt(prompt("4-subtraction"));
+        parseInt(prompt("5-QUITTE"));
+       let choisis = parseInt(prompt("choisis"));
+
+       switch(choisis){
+        case 1 :
+           console.log("1-addition");
+           break;
+        case 2 :
+            console.log("2-multiplication");
+            break;
+        case 3 :
+            console.log("3-division");
+            break ;
+        case 4 :
+            console.log("4-subtraction");
+            break ;
+        case 5 :
+            console.log("5-Quitte");
+            break ;     
+        default :
+          console.log("ce numero n est pas valider: ");
+       }
+
+    }
+}
